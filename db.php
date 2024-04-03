@@ -2,13 +2,26 @@
 
 require './models/category.php';
 require './models/product.php';
+require './models/food.php';
+require './models/game.php';
+require './models/kennels.php';
  
 $cat = new Category("Gatto");
 $dog = new Category("Cane");
 
+$food1 = new Food("Crocchette","Crochette per gatti obesi","10€","https://shop-cdn-m.mediazs.com/bilder/purina/one/sensitive/crocchette/per/gatti/7/400/1_icon_topseller_1_1_3__7.jpg", $cat,"250g","fish");
+
+$food2 = new Food("Croccantini","Croccantini per cani felici","12€","https://www.bestprato.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/u/purina-pro-plan-all-size-opti-weight.jpg", $dog, "1kg", "chiken");
+
+$game1 = new Game("Osso di gomma", "osso di gomma per cani","6€","https://www.aqpet.it/1840-large_default/dental-giochi-per-cane-osso-di-gomma-123-x-66-cm.jpg", $dog, "Taglia: S");
+
+$game2 = new Game("Topolino", "Topolino meccanico di stoffa","8€","https://bau-miao.com/wp-content/uploads/2020/01/Topolino-di-stoffa-300x214.jpg", $cat, "Taglia: M");
+
 $products = [
-    new Products("Crocchette","Crochette per gatti obesi","10€","https://www.google.com/url?sa=i&url=https%3A%2F%2Fmeafarma.it%2Fexigent-3530-savour-sensation&psig=AOvVaw24zJPPVqqDmky1ge0yFhi-&ust=1712244342659000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjKvrOtpoUDFQAAAAAdAAAAABAT", $cat),
-    new Products("Croccantini","Croccantini per cani felici","12€","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arcaplanet.it%2Fmonge-mini-adult-al-pollo%2Fp&psig=AOvVaw11_SPBZsPp0nbmdvjIQSHw&ust=1712244490833000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLi2mvetpoUDFQAAAAAdAAAAABAE", $dog),
+    $food1,
+    $food2,
+    $game1,
+    $game2
 ];
  
 
