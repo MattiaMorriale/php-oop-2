@@ -28,8 +28,8 @@
             foreach($products as $product) {
                 ?>
                 <div class='card d-flex flex-column align-items-center p-0' style='width: calc(100% / 3 - 25px/ 3 * 2);'>
-                    <i class="<?= $product->category->getCategory() ?> text-success"></i>
-                    <div class="img-box m-4 ">
+                    <div class="img-box m-4 position-relative ">
+                        <i class="<?= $product->category->getCategory() ?> text-success"></i>
                         <img src='<?= $product->image ?>' class='card-img-top img-fluid' alt='#'>
                     </div>
                     <div class='card-body d-flex flex-column align-items-start w-100 pb-5 '>
