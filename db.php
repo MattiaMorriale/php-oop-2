@@ -9,19 +9,25 @@ require './models/kennels.php';
 $cat = new Category("Gatto");
 $dog = new Category("Cane");
 
-$food1 = new Food("Crocchette","Crochette per gatti obesi","10€","https://shop-cdn-m.mediazs.com/bilder/purina/one/sensitive/crocchette/per/gatti/7/400/1_icon_topseller_1_1_3__7.jpg", $cat,"250g","fish");
+$food1 = new Food("Crocchette","Cibo per Gatti Adulti Sterilizzati Monoproteico Exclusion Mediterraneo","20,50€","https://www.robinsonpetshop.it/16734-large_default/exclusion-mediterraneo-sterilized-manzo-noble-grain-per-gatti.jpg", $cat,"1,5kg","Gusto: Manzo");
 
-$food2 = new Food("Croccantini","Croccantini per cani felici","12€","https://www.bestprato.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/u/purina-pro-plan-all-size-opti-weight.jpg", $dog, "1kg", "chiken");
+$food2 = new Food("Crocchette","Crocchette per Cani Adulti Monoproteiche Exclusion Mediterraneo","16,40€","https://media.zooplus.com/bilder/3/400/111626_pla_exclusion_exclusionmediterraneo_monoprotein_nograin_medium_chicken_12kg_hs_01_3.jpg", $dog, "2kg", "Gusto: Maiale");
 
-$game1 = new Game("Osso di gomma", "osso di gomma per cani","6€","https://www.aqpet.it/1840-large_default/dental-giochi-per-cane-osso-di-gomma-123-x-66-cm.jpg", $dog, "Taglia: S");
+$game1 = new Game("Osso", "Gioco per Cani Nylabone Moderate Dental Chew a Forma di Osso","20,00€","https://www.aqpet.it/1840-large_default/dental-giochi-per-cane-osso-di-gomma-123-x-66-cm.jpg", $dog, "Taglia: M");
 
-$game2 = new Game("Topolino", "Topolino meccanico di stoffa","8€","https://bau-miao.com/wp-content/uploads/2020/01/Topolino-di-stoffa-300x214.jpg", $cat, "Taglia: M");
+$game2 = new Game("Topolino", "Topolino meccanico di stoffa MouseMagic","8€","https://www.epocaitalpigeon.com/12417/camon-topo-meccanico-senza-pelo-da-7-cm-gioco-per-gatto-colori-vari.jpg", $cat, "Taglia: M");
+
+$Kennels1 = new Kennels("Cuccia per cane", "Cuccia Trono Ovale per Cani Nasonero Linea Eco Trama Verde","35,00€","https://www.galleranistore.it/media/catalog/product/cache/1/image/600x/040ec09b1e35df139433887a97daa66f/p/r/progetto_senza_titolo.jpg", $dog, "Taglia: all", "Materiale: Stoffa");
+
+$Kennels2 = new Kennels("Torre per gatto", "Torre per gatto, arrampicata","68€","https://www.costway.it/media/catalog/product/cache/609f5cdc39db237cbce5e810838f4671/t/o/torre_per_gatti-pv10083gn-_4_.jpg", $cat, "Taglia: XL", "Materiale: Corda, Stoffa");
 
 $products = [
     $food1,
     $food2,
     $game1,
-    $game2
+    $game2,
+    $Kennels1,
+    $Kennels2,
 ];
  
 
