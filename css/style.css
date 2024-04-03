@@ -22,9 +22,21 @@ h1{
     background-color: rgb(255, 229, 197);
 }
 
+.card i{
+    font-size: 25px;
+    padding: 12px;
+    background-color: rgb(233, 198, 155);
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 7px;
+    left: 7px;
+}
+
 .img-box{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .img-box img{

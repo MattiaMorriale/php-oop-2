@@ -28,11 +28,12 @@
             foreach($products as $product) {
                 ?>
                 <div class='card d-flex flex-column align-items-center p-0' style='width: calc(100% / 3 - 25px/ 3 * 2);'>
-                    <div class="img-box m-2 ">
+                    <i class="<?= $product->category->getCategory() ?> text-success"></i>
+                    <div class="img-box m-4 ">
                         <img src='<?= $product->image ?>' class='card-img-top img-fluid' alt='#'>
                     </div>
-                    <div class='card-body d-flex flex-column align-items-start w-100'>
-                        <h5 class='card-title'><?= $product->title?></h5>
+                    <div class='card-body d-flex flex-column align-items-start w-100 pb-5 '>
+                        <h3 class='card-title text-success '><?= $product->title?></h5>
                         <p class='card-text'><?= $product->description?></p>
                         <p class='card-text'><?= is_a($product, 'Food') ? $product->quantity : ''?></p>
                         <p class='card-text'><?= is_a($product, 'Food') ? $product->taste : ''?></p>
@@ -51,6 +52,9 @@
 
     <!-- bootscript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/1a036a6099.js" crossorigin="anonymous"></script>
   
 </body>
 </html>

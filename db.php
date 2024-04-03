@@ -6,8 +6,8 @@ require './models/food.php';
 require './models/game.php';
 require './models/kennels.php';
  
-$cat = new Category("Gatto");
-$dog = new Category("Cane");
+$cat = new Category("fa-solid fa-cat");
+$dog = new Category("fa-solid fa-dog");
 
 $food1 = new Food("Crocchette","Cibo per Gatti Adulti Sterilizzati Monoproteico Exclusion Mediterraneo","20,50€","https://www.robinsonpetshop.it/16734-large_default/exclusion-mediterraneo-sterilized-manzo-noble-grain-per-gatti.jpg", $cat,"1,5kg","Gusto: Manzo");
 
