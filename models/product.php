@@ -32,7 +32,7 @@ class Products {
             
         } else {
         
-            throw new Exception("Il prezzo inserito non è di valore numerico");
+            throw new Exception("Alcuni prodotti non verranno visualizzati in pagina");
             
         }
         
