@@ -1,6 +1,12 @@
 <?php
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
+
 
  require './db.php';
+
+
 
 ?>
 
@@ -52,7 +58,7 @@
                         <p class='card-text'><?= is_a($product, 'Game') ? $product->cut : ''?></p>
                         <p class='card-text'><?= is_a($product, 'Kennels') ? $product->mediumQuantity : ''?></p>
                         <p class='card-text'><?= is_a($product, 'Kennels') ? $product->material : ''?></p>
-                        <strong class="d-block position-absolute w-100 text-end fs-4 text-success"><?= $product->price ?></strong>
+                        <strong class="d-block position-absolute w-100 text-end fs-4 text-success"><?= $product->price?>€</strong>
                     </div>
                 </div>
                 <?php
