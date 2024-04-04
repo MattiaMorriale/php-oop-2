@@ -35,10 +35,10 @@
                     <div class='card-body d-flex flex-column align-items-start w-100 pb-5 '>
                         <h3 class='card-title text-success '><?= $product->title?></h5>
                         <p class='card-text'><?= $product->description?></p>
-                        <p class='card-text'><?= is_a($product, 'Food') ? $product->quantity : ''?></p>
+                        <p class='card-text'><?= is_a($product, 'Food') ? $product->mediumQuantity : ''?></p>
                         <p class='card-text'><?= is_a($product, 'Food') ? $product->taste : ''?></p>
                         <p class='card-text'><?= is_a($product, 'Game') ? $product->cut : ''?></p>
-                        <p class='card-text'><?= is_a($product, 'Kennels') ? $product->size : ''?></p>
+                        <p class='card-text'><?= is_a($product, 'Kennels') ? $product->mediumQuantity : ''?></p>
                         <p class='card-text'><?= is_a($product, 'Kennels') ? $product->material : ''?></p>
                         <strong class="d-block position-absolute w-100 text-end fs-4 text-success"><?= $product->price ?></strong>
                     </div>
