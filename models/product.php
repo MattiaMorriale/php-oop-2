@@ -14,7 +14,7 @@ class Products {
      *
      * @param  mixed $_title
      * @param  mixed $_description
-     * @param  mixed $_price
+     * @param  float $_price
      * @param  mixed $_image
      * @return void
      */
@@ -22,10 +22,19 @@ class Products {
         
         $this->title = $_title;
         $this->description = $_description;
-        $this->price = $_price;
         $this->image = $_image;
 
         $this->category = $category;
+
+        if(is_numeric($_price)) {
+
+            $this->price = $_price;
+            
+        } else {
+        
+            throw new Exception("Il prezzo inserito non è di valore numerico");
+            
+        }
         
     }
 

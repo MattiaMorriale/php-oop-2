@@ -22,6 +22,18 @@
     <div class="container-fluid d-flex flex-column align-items-center">
         <h1 class="text-success my-5" >Animal Planet</h1>
 
+        <?php 
+    
+        if ($error) {
+            ?>
+            <div class="alert alert-warning" role="alert">
+                <?= $error ?>
+            </div>
+            <?php
+        }
+
+        ?>
+
         <div class="my-container d-flex flex-wrap justify-content-center pb-5 ">
         <?php
 
